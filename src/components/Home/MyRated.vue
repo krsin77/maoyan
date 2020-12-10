@@ -2,7 +2,7 @@
     <div class="rated">
         <h5>最受好评的电影</h5>
         <ul>
-            <li v-for="item in ratedList" :key="item._id">
+            <li v-for="item in ratedList" :key="item._id" @click="goToDetail()">
                 <div class="img-wrap">
                     <img :src="item.imgUrl" alt="">
                     <span v-if="item.score">观众评分 {{item.score}}</span>
@@ -33,6 +33,11 @@ export default ({
                 scrollY: false,
                 click: true
             });
+        }
+    },
+    methods:{
+        goToDetail(){
+            
         }
     }
 })

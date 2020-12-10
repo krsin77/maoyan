@@ -4,6 +4,7 @@ import App from './App.vue';
 //引入路由
 // import router from './router'
 // import store from './store'
+import router from "./router";
 
 // 引入reset.css
 import "./assets/style/reset.scss";
@@ -20,5 +21,6 @@ Vue.config.productionTip = false
 new Vue({
     // router:router,
     // store:store,
+    router: router,
     render: h => h(App)
 }).$mount('#app');

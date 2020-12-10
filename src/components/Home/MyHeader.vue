@@ -34,15 +34,19 @@ export default ({
         }
 
         .icon-icon105{
+            color: #fff;
             position: absolute;
             left: 12px;
-            color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
         }
         
         .icon-mulu{
+            color: #fff;
             position: absolute;
             right: 12px;
-            color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 </style>

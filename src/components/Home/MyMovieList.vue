@@ -2,12 +2,12 @@
   <div class="movie-list">
     <ul>
       <my-movie-item
-        v-for="item in movieList"
-        :key="item.movieid"
+        v-for="(item,index) in movieList"
+        :key="index"
         :item="item"
       ></my-movie-item>
     </ul>
-    <p v-if="isToBottom">到底了</p>
+    <p v-if="isToBottom" class="bot">我是有底线的...</p>
   </div>
 </template>
 
@@ -32,5 +32,10 @@ export default {
 .movie-list {
   background: #fff;
   margin-top: 10px;
+
+  .bot{
+    margin-left: 15px;
+    font-size: 14px;
+  }
 }
 </style>

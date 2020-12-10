@@ -15,3 +15,7 @@ export const getMovieListApi = params => {
 export const getMovieListMoreApi = params =>{
   return http.post("/movies/more", params);
 } 
+
+export const getMovieDetailApi = params =>{
+  return http.post("/movies/detail",params);
+}
