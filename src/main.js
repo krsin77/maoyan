@@ -2,9 +2,10 @@ import Vue from 'vue';
 import App from './App.vue';
 
 //引入路由
-// import router from './router'
-// import store from './store'
 import router from "./router";
+
+//引入store
+import store from './store'
 
 // 引入reset.css
 import "./assets/style/reset.scss";
@@ -19,8 +20,7 @@ import "amfe-flexible";
 Vue.config.productionTip = false
 
 new Vue({
-    // router:router,
-    // store:store,
+    store:store,
     router: router,
     render: h => h(App)
 }).$mount('#app');

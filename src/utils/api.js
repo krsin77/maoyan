@@ -19,3 +19,7 @@ export const getMovieListMoreApi = params =>{
 export const getMovieDetailApi = params =>{
   return http.post("/movies/detail",params);
 }
+
+export const getCitiesListApi = params =>{
+  return http.get("/area/list",params);
+}
